@@ -11,7 +11,7 @@
         <form action="Note" method="post">
         <label>Title: </label>&nbsp;<input type="text" size="30" name="newtitle" value="This is the title">
         <br>
-        <label>Contents: </label>&nbsp;<input type="text" size="30" name="newcontents" value="Change Contents">
+        <label>Contents: </label>&nbsp;<input type="text" size="30" name="newcontents" value="Contents go here">
         <br>
         <input type="submit" value="Save">
         </form>
