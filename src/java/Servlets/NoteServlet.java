@@ -35,22 +35,15 @@ public class NoteServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        //get the file path to note.txt
         String path = getServletContext().getRealPath("/WEB-INF/note.txt");
-        //create a print writer to write on note.txt
         PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter(path, false)));
-        //create variables to hold the data from editnote.jsp
         String title = request.getParameter("newtitle");
         String contents = request.getParameter("newcontents");
-        //write the new title and contents into note.txt
         pw.println(title);
         pw.println(contents);
-        //close the print writer
         pw.close();
-        //create a new note object
         Note note = new Note(title, contents);
         request.setAttribute("note", note);
-        //display the new data in viewnote.jsp
         getServletContext().getRequestDispatcher("/WEB-INF/viewnote.jsp").forward(request, response);
     }
 }
