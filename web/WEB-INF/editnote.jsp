@@ -9,9 +9,9 @@
         <h1>Simple Note Keeper</h1>
         <h2>Edit Note</h2>
         <form action="Note" method="post">
-        <label>Title: </label>&nbsp;<input type="text" size="30" name="newtitle" value="This is the title">
+        <label>Title: </label><input type="text" size="30" name="newtitle" value="This is the title">
         <br>
-        <label>Contents: </label>&nbsp;<input type="text" size="30" name="newcontents" value="Contents go here">
+        <label>Contents: </label><input type="text" size="30" name="newcontents" value="Contents go here">
         <br>
         <input type="submit" value="Save">
         </form>

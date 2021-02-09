@@ -16,6 +16,6 @@
         <br>
         <br>
         </form>
-        <a href="Note?edit">Edit</a>
+        <a href="edit">Edit</a>
     </body>
 </html>
