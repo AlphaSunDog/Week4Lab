@@ -9,10 +9,10 @@
         <h1>Simple Note Keeper</h1>
         <h2>View Note</h2>
         <form action="Note" method="get">
-        <label>Title: </label><span>${note.title}</span>
+        <label>Title: </label><span>${nt.title}</span>
         <br>
         <br>
-        <label>Contents: </label><br><span>${note.contents}</span>
+        <label>Contents: </label><br><span>${nt.contents}</span>
         <br>
         <br>
         </form>
